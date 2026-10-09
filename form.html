@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+   
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: aquamarine;
+            text-align: left;
+            border: 90px;
+            padding: 20px ;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            cursor: pointer;
+            text-align: left;
+            margin-bottom: 20 px;
+
+        }
+   
+        
+      
+    </style>
+    
+
+</head>
+<body>
+    <div class="container"></div>
+   
+    <form action="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br></br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="comfirm password">comfirmm password</label>
+        <input type="comfirm password" id="comfirm password" required>
+        <br></br>
+        
+        <label for="male"> male</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female"> female</label>
+        <input type="radio" id="female" name="gender">
+        <br><br>
+
+        <label for="country">country</label>
+        <select id="country" name="country">
+            <option value="USA">USA</option>
+            <option value="NIGERIA">NIGERIA</option>
+            <option value="UK">UK</option>
+        </select>
+        <BR></BR>
+        <input type="submit">
+
+            
+
+        </select>
+    </form>
+    
+</body>
+</html>
