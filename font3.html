@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font and form</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        *{ 
+            background-color: aqua;
+        }
+        h1{
+            position: sticky;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+        }
+            .style{
+            font-weight: bolder;
+            font-family: Arial, sans-serif;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="half">
+        <h1>MY NAME IS AMINDI NSE </h1>
+    <P class="style"> I want to introduce myself.</P>
+    <p>once again, am by name AMINDI NSE i was a person who always thinks that coding is one of the
+      most difficult thing to do but not until i started learning it.
+      and now i can say that coding is one of the most interesting thing to do and i have learned a lot of things in this journey.
+      lastly i also believe that am going to be able to become a full stack developer and also be able to build a mobile application.
+    </p>
+</div>
+<form action="form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <gender for="gender">Gender:</gender>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+
+    <label for="password">password:</label>
+   <input type="password" id="message" name="message" required><br><br>
+   <label for="comfirm password">Comfirm password:</label>
+    <input type="password" id="comfirm password" name="comfirm password" required><br><br>
+
+    <input type="submit" value="Submit">
+    
+</body>
+</html>
