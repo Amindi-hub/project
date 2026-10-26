@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <header>
+        <h1>My responsive page</h1>
+        <p>my first reponsive design </p>
+    </header>
+    <nav>
+        <a href="#">home</a>
+        <a href="#">About</a>
+        <a href="#">contact</a>
+    </nav>
+    <div class="screen-info"></div>
+    <main>
+        <div class="cards">
+            <div class="card">
+                <h2>card 1</h2>
+                <p>this look good in mobile</p>
+            </div>
+            <div class="card">
+                <h2>card 2</h2>
+                <p>on a tablet </p>
+            </div>
+            <div class="card">
+                <h2>card 3</h2>
+                <p>in the desktop</p>
+            </div>
+            <div class="card">
+                <h2>card 4</h2>
+                <p>bigger scrren </p>
+            </div>
+            <div class="card">
+                <h2>card 5</h2>
+                <p>design for bigger  screen</p>
+            </div>
+            <div class="card">
+                <h2>card 6</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 design by amindi nse</p>
+    </footer>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.5;
+        }
+        header{
+            background: #2d6cdf;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-top: 1px solid rgba(225,255,255,0.3);
+
+        }
+        .screen-info{
+            text-align: center;
+            font-weight: bold;
+            padding: 12px;
+            background: #ffd54f;
+        }
+        .screen-info::after{
+            content: "this is a phone view";
+        }
+        main{
+            padding: 15px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .card{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card h2{
+            font-size: 1.1 rem;
+            margin-bottom: 8px;
+            color: #2d6cdf;
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+        }
+        @media  (min-width:600px){
+            .screen-info {
+                background: #81c784;
+
+            }
+            .screen-info::after{
+                content: "this is a tablet view";
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+            }
+            nav a{
+                border-top: none;
+                padding: 8px 20px;
+            }
+            .cards{
+                grid-template-columns: 1fr 1fr ;
+            }
+        }
+
+        @media (min-width:900px){
+            .screen-info{
+                background: #64b5f6;
+            }
+            .screen-info::after{
+                content: "this is the desktop view";
+            }
+            header h1{
+                font-size: 2.5 rem;
+            }
+            main{
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .cards{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media print{
+            nav, .screen-info{
+                display: none;
+            }
+        }
+    </style>
+</body>
+</html>
