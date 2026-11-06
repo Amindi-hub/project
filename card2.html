@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD PROJECT</title>
+</head>
+<body>
+    <header>
+        <h1>CARD PROJECT</h1>
+        <p>this is my first card project</p>
+    </header>
+    <nav>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact information</a>
+    </nav>
+    <div class="screeninfo"></div>
+        <main>
+            <div class="card">
+                <div class="class">
+                    <h2>CARD 1</h2>
+                    <p>looks good on mobile</p>
+                </div>
+            <div class="card"></div>
+                    <h2>CARD 2</h2>
+                    <P>looks good on tablet</P>
+            </div>
+            <div class="card">
+                <h2>CARD 3</h2>
+                <p>looks ggood on desktop</p>
+            </div>
+            <div class="card">
+                <h2>CARD</h2>
+                <P>loks good on desktop</P>
+            </div>
+            <div class="card">
+                <h2>CARD 4</h2>
+                <P>looks good bigger screen</P>
+            </div>
+            <div class="card">
+                <h2>CARD 5</h2>
+                <p>bigger screen</p>
+            </div>
+            <div class="card">
+                <h2>CARD 6</h2>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 design by AMINDI NSE</p>
+    </footer>
+      <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            line-height: 1.7;
+        }
+        header{
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-top: 1px solid rgb(251, 242, 242);
+        }
+        .screeninfo{
+            text-align: center;
+            font-width: bold;
+            padding: 12px;
+            background-color: aqua;
+        }
+        .screeninfo::after{
+            content: this is a desktop view;
+           
+        }
+        main{
+            padding: 17px;
+        }
+        .card{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .card{
+            background-color: black;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: (0 2px 5px rgba)(0, 0, 0, 0, 0,.1);
+        }
+        card h2{
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: gray;
+        }
+        footer{
+            text-align: center;
+            padding: 16px;
+            background-color: aqua;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        @media (min-width :600px){
+            .screeninfo{
+                background-color: red;
+            }
+          .screeninfo::after{
+                content: this is a mobile view;
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+            }
+            nav a{
+                border-top: none;
+                padding: 8px 20px;
+            }
+            .card{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+            
+             @media (min-width:900px){
+            .screen-info{
+                background: orange;
+                color: black;
+            }
+            .screen-info::after{
+                content: "this is the desktop view";
+            }
+            header h1{
+                font-size: 2.5 rem;
+            }
+            main{
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .cards{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+       
+            @media print{
+                nav, .screeninfo{
+                    display: none;
+                }
+            }
+      
+      </style>
+</body>
+</html>
